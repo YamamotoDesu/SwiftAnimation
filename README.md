@@ -78,7 +78,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
             yAnchor = basicView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200)
             yAnchor.isActive = true
             
-            //widthAnchor.isActive = false
+            widthAnchor.isActive = false
             widthAnchor = basicView.widthAnchor.constraint(equalToConstant: view.frame.width - 20)
             widthAnchor.isActive = true
             
