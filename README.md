@@ -37,7 +37,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
 
 ## Spring Animation
 <img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SpringAnimation.gif" width="300">  
-https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SimpleController.swift  
+https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SpringController.swift  
 
 ```swift
        perform(#selector(animateBox), with: nil, afterDelay: 2)
