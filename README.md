@@ -99,7 +99,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
     
 ```
 
-## Simple Animation
+## Button Animation
 <img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/ButtonAnimation.gif" width="300">  
 https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/ButtonController.swift
 
