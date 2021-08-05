@@ -34,3 +34,65 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
         imageView.startAnimating()
 
 ```
+
+## Spring Animation
+<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SpringAnimation.gif" width="300">  
+https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SimpleController.swift  
+
+```swift
+       perform(#selector(animateBox), with: nil, afterDelay: 2)
+        
+        basicView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOnTap)))
+        
+     }
+
+     @objc fileprivate func animateBox() {
+        
+        yAnchor.isActive = false
+        yAnchor = basicView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100)
+        yAnchor.isActive = true
+        
+        widthAnchor.isActive = false
+        widthAnchor = basicView.widthAnchor.constraint(equalToConstant: 300)
+        widthAnchor.isActive = true
+        
+        heightAnchor.isActive = false
+        heightAnchor = basicView.heightAnchor.constraint(equalToConstant: view.frame.height - 50)
+        heightAnchor.isActive = true
+        
+        UIView.animate(withDuration: 0.6, delay: 1, usingSpringWithDamping: 0.4, initialSpringVelocity: 1.5, options: .curveLinear) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    var tapped:Bool = false
+    
+    @objc func animateOnTap() {
+        
+        if tapped {
+            widthAnchor.isActive = false
+            widthAnchor = basicView.widthAnchor.constraint(equalToConstant: view.frame.width/2)
+            widthAnchor.isActive = true
+        } else {
+            yAnchor.isActive = false
+            yAnchor = basicView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 200)
+            yAnchor.isActive = true
+            
+            //widthAnchor.isActive = false
+            widthAnchor = basicView.widthAnchor.constraint(equalToConstant: view.frame.width - 20)
+            widthAnchor.isActive = true
+            
+            heightAnchor.isActive = false
+            heightAnchor = basicView.heightAnchor.constraint(equalToConstant: 200)
+            heightAnchor.isActive = true
+            
+            UIView.animate(withDuration: 0.6, delay: 1, usingSpringWithDamping: 0.4, initialSpringVelocity: 1.5, options: .curveLinear) {
+                self.view.layoutIfNeeded()
+            }
+        }
+        
+        self.tapped = !tapped
+    }
+    
+    
+```
