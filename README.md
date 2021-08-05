@@ -105,17 +105,54 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
 
 ```swift
 
-        var spriteImages = [UIImage]()
-        
-        for i in 0 ..< 29 {
-            spriteImages.append(UIImage(named: "tile0\(i)")!)
+
+        let button = AnimationButton(title: "MCButton")
+        view.addSubview(button)
+
+        UIView.animate(withDuration: 0.6, delay: 1, usingSpringWithDamping: 0.4, initialSpringVelocity: 1.5, options: .curveLinear) {
+            self.view.layoutIfNeeded()
         }
+
+```
+
+https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/View/AnimationButton.swift  
+
+```swift
+
+        addTarget(self, action: #selector(down), for: .touchDown)
+        addTarget(self, action: #selector(up), for: .touchUpInside)
+    }
+    
+    @objc fileprivate func down() {
         
-        imageView.animationImages = spriteImages
-        // The amount of time it takes to go through one cycle of the images
-        imageView.animationDuration = 0.6
-        // Specifies the number of times to repeat the animation
-        imageView.animationRepeatCount = 1
-        imageView.startAnimating()
+        wAnchor?.isActive = false
+        hAnchor?.isActive = false
+        wAnchor?.constant = 100
+        hAnchor?.constant = 100
+        wAnchor?.isActive = true
+        hAnchor?.isActive = true
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn) {
+            self.superview?.layoutIfNeeded()
+            //self.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }
+
+    }
+    
+    @objc fileprivate func up() {
+        
+        wAnchor?.isActive = false
+        hAnchor?.isActive = false
+        wAnchor?.constant = 150
+        hAnchor?.constant = 54
+        wAnchor?.isActive = true
+        hAnchor?.isActive = true
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn) {
+            self.superview?.layoutIfNeeded()
+            // resetting any changes that have been applied by modifying its transform property
+            self.transform = .identity
+        }
+    }
 
 ```
