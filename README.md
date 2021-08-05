@@ -167,6 +167,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
         
         animator.addAnimations {
             self.blurView.alpha = 1
+            // An affine transformation matrix for use in drawing 2D graphics.
             self.imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
         }
 
