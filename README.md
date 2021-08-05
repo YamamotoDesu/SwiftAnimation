@@ -61,6 +61,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
         heightAnchor = basicView.heightAnchor.constraint(equalToConstant: view.frame.height - 50)
         heightAnchor.isActive = true
         
+        // Performs a view animation using a timing curve corresponding to the motion of a physical spring.
         UIView.animate(withDuration: 0.6, delay: 1, usingSpringWithDamping: 0.4, initialSpringVelocity: 1.5, options: .curveLinear) {
             self.view.layoutIfNeeded()
         }
