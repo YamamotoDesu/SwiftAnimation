@@ -17,6 +17,10 @@
 		7B6F4C9C26BA15E200A78B10 /* AnimationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4C9B26BA15E200A78B10 /* AnimationButton.swift */; };
 		7B6F4CA326BA1B8E00A78B10 /* ButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CA226BA1B8E00A78B10 /* ButtonController.swift */; };
 		7B6F4CA826BB57D200A78B10 /* PropertyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CA726BB57D200A78B10 /* PropertyController.swift */; };
+		7B6F4CB626BBF8C700A78B10 /* SimpleAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CB526BBF8C700A78B10 /* SimpleAnimation.gif */; };
+		7B6F4CB926BBF90400A78B10 /* SpringAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CB826BBF90400A78B10 /* SpringAnimation.gif */; };
+		7B6F4CBC26BBF96D00A78B10 /* ButtonAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CBB26BBF96D00A78B10 /* ButtonAnimation.gif */; };
+		7B6F4CBF26BBF9B600A78B10 /* PropertyAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		7B6F4C9B26BA15E200A78B10 /* AnimationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationButton.swift; sourceTree = "<group>"; };
 		7B6F4CA226BA1B8E00A78B10 /* ButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonController.swift; sourceTree = "<group>"; };
 		7B6F4CA726BB57D200A78B10 /* PropertyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyController.swift; sourceTree = "<group>"; };
+		7B6F4CB526BBF8C700A78B10 /* SimpleAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SimpleAnimation.gif; sourceTree = "<group>"; };
+		7B6F4CB826BBF90400A78B10 /* SpringAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpringAnimation.gif; sourceTree = "<group>"; };
+		7B6F4CBB26BBF96D00A78B10 /* ButtonAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ButtonAnimation.gif; sourceTree = "<group>"; };
+		7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PropertyAnimation.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 		7B6F4C3A26B9751B00A78B10 /* SwiftAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				7B6F4CB426BBF8B700A78B10 /* Git */,
 				7B6F4C3B26B9751B00A78B10 /* AppDelegate.swift */,
 				7B6F4C3D26B9751B00A78B10 /* SceneDelegate.swift */,
 				7B6F4C9326B980CE00A78B10 /* Storyboard */,
@@ -101,6 +110,17 @@
 				7B6F4C9B26BA15E200A78B10 /* AnimationButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7B6F4CB426BBF8B700A78B10 /* Git */ = {
+			isa = PBXGroup;
+			children = (
+				7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */,
+				7B6F4CBB26BBF96D00A78B10 /* ButtonAnimation.gif */,
+				7B6F4CB826BBF90400A78B10 /* SpringAnimation.gif */,
+				7B6F4CB526BBF8C700A78B10 /* SimpleAnimation.gif */,
+			);
+			path = Git;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6F4C4826B9751E00A78B10 /* LaunchScreen.storyboard in Resources */,
+				7B6F4CBF26BBF9B600A78B10 /* PropertyAnimation.gif in Resources */,
 				7B6F4C4526B9751E00A78B10 /* Assets.xcassets in Resources */,
 				7B6F4C4326B9751B00A78B10 /* Main.storyboard in Resources */,
+				7B6F4CB626BBF8C700A78B10 /* SimpleAnimation.gif in Resources */,
+				7B6F4CB926BBF90400A78B10 /* SpringAnimation.gif in Resources */,
+				7B6F4CBC26BBF96D00A78B10 /* ButtonAnimation.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
