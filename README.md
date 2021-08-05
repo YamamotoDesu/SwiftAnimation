@@ -158,11 +158,13 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/View/Ani
 ```
 
 
-## Simple Animation
-<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SimpleAnimation.gif" width="300">  
+## Property Animation
+<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/PropertyAnimation.gif" width="300">  
 https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/PropertyController.swift 
 
 ```swift
+        // A class that animates changes to views and allows the dynamic modification of those animations.
+        let animator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: nil) 
         self.blurView.alpha = 0
         
         animator.addAnimations {
