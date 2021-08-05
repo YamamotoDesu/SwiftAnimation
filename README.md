@@ -40,6 +40,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
 https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SpringController.swift  
 
 ```swift
+       // Invokes a method of the receiver on the current thread using the default mode after a delay.
        perform(#selector(animateBox), with: nil, afterDelay: 2)
         
         basicView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animateOnTap)))
