@@ -160,22 +160,23 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/View/Ani
 
 ## Simple Animation
 <img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SimpleAnimation.gif" width="300">  
-https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SimpleController.swift  
+https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/PropertyController.swift 
 
 ```swift
-
-        var spriteImages = [UIImage]()
+        self.blurView.alpha = 0
         
-        for i in 0 ..< 29 {
-            spriteImages.append(UIImage(named: "tile0\(i)")!)
+        animator.addAnimations {
+            self.blurView.alpha = 1
+            self.imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
         }
-        
-        imageView.animationImages = spriteImages
-        // The amount of time it takes to go through one cycle of the images
-        imageView.animationDuration = 0.6
-        // Specifies the number of times to repeat the animation
-        imageView.animationRepeatCount = 1
-        imageView.startAnimating()
 
+        slider.addTarget(self, action: #selector(handleSliderChanged(slider:)), for: .allEvents)
+    }
+       
+    @objc fileprivate func handleSliderChanged(slider: UISlider) {
+        print(slider.value)
+        // The completion percentage of the animation
+        animator.fractionComplete = CGFloat(slider.value)
+    }
 ```
 
