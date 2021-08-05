@@ -101,7 +101,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
 
 ## Simple Animation
 <img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/ButtonAnimation.gif" width="300">  
-https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SimpleController.swift  
+https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/ButtonController.swift
 
 ```swift
 
