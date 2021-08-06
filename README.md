@@ -21,7 +21,7 @@
         <tr>
             <th>Affine Animation</th>
         </tr>
-        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SimpleAnimation.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CGAffine.gif" width="300"></td>
     </tr>
 </table>
 
