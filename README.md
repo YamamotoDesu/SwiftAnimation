@@ -19,11 +19,14 @@
 <table border="0">
     <tr>
         <tr>
-            <th>Affine Animation</th>
+            <th>CGAffineTransform Animation</th>
+            <th>Core Basic Animation</th>
         </tr>
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CGAffine.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CAStandardAnimation.gif" width="300"></td>
     </tr>
 </table>
+
 
 # Usage
 
@@ -226,5 +229,40 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
         }
 
 ```
+
+## Core Basic Animation
+<table border="0">
+    <tr>
+        <tr>
+            <th>CGAffineTransform Animation</th>
+            <th>scaledBy(x: 1.1, y: 1.6)</th>
+            <th>transform.translatedBy(x: 100, y: 100)</th>
+            <th>transform.rotated(by: 45)</th>
+        </tr>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CAStandardAnimation.gif" height="400" width="200"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/128437486-73e6e88e-e708-4813-9e87-c3aae93a88c9.png" height="400" width="200"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/128438212-38455869-d00d-4947-ba13-8b6aedde09f3.png" height="400" width="200"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/128437840-1f18c1e9-f15f-49b7-bc9c-3f3ffdb9d0d9.png" height="400" width="200"></td>
+    </tr>
+
+</table>
+https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/CABasicAnimationController.swift
+
+```swift
+
+        let basic0 = CABasicAnimation(keyPath: "transform.scale")
+        // Defines the value the receiver uses to end interpolation.
+        basic0.toValue = 0.5
+        basic0.duration = 2
+        
+        // The receiver remains visible in its final state when the animation is completed.
+        basic0.fillMode = CAMediaTimingFillMode.forwards
+        // Determines if the animation is removed from the target layer’s animations upon completion.
+        basic0.isRemovedOnCompletion = false
+        
+        imageView.layer.add(basic0, forKey: "test.io")
+        
+```
+
 
 
