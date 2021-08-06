@@ -1,4 +1,5 @@
 # SwiftAnimation(WIP)
+### UIKit Animation
 <table border="0">
     <tr>
         <tr>
@@ -11,6 +12,16 @@
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SpringAnimation.gif" width="300"></td>
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/ButtonAnimation.gif" width="300"></td>
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/PropertyAnimation.gif" width="300"></td>
+    </tr>
+</table>
+
+### Core Graphics
+<table border="0">
+    <tr>
+        <tr>
+            <th>Affine Animation</th>
+        </tr>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SimpleAnimation.gif" width="300"></td>
     </tr>
 </table>
 
@@ -182,4 +193,34 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
         animator.fractionComplete = CGFloat(slider.value)
     }
 ```
+
+## Simple Animation
+<table border="0">
+    <tr>
+        <tr>
+            <th>CGAffineTransform Animation</th>
+            <th>scaledBy(x: 1.1, y: 1.6)</th>
+            <th>transform.translatedBy(x: 30, y: 50)</th>
+            <th>transform.rotated(by: 45)</th>
+        </tr>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CGAffine.gif" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/128437486-73e6e88e-e708-4813-9e87-c3aae93a88c9.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/128437791-4d3a0414-154e-427d-9e6c-771b12bfb4fb.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/128437840-1f18c1e9-f15f-49b7-bc9c-3f3ffdb9d0d9.png" width="300"></td>
+    </tr>
+</table>
+
+```swift
+
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn) {
+            var transform = CGAffineTransform.identity
+            transform = transform.scaledBy(x: 1.1, y: 1.6)
+            transform = transform.translatedBy(x: 30, y: 50)
+            transform = transform.rotated(by: 45)
+            
+            self.box.transform = transform
+        }
+
+```
+
 
