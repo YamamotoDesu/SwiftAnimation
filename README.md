@@ -23,7 +23,7 @@
             <th>Core Basic Animation</th>
         </tr>
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CGAffine.gif" width="300"></td>
-        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CAStandardAnimation.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CABasicAnimation.gif" width="300"></td>
     </tr>
 </table>
 
@@ -239,7 +239,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
             <th>transform.translatedBy(x: 100, y: 100)</th>
             <th>transform.rotated(by: 45)</th>
         </tr>
-        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CAStandardAnimation.gif" height="400" width="200"></td>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CABasicAnimation.gif" height="400" width="200"></td>
         <td><img src="https://user-images.githubusercontent.com/47273077/128437486-73e6e88e-e708-4813-9e87-c3aae93a88c9.png" height="400" width="200"></td>
         <td><img src="https://user-images.githubusercontent.com/47273077/128438212-38455869-d00d-4947-ba13-8b6aedde09f3.png" height="400" width="200"></td>
         <td><img src="https://user-images.githubusercontent.com/47273077/128437840-1f18c1e9-f15f-49b7-bc9c-3f3ffdb9d0d9.png" height="400" width="200"></td>
