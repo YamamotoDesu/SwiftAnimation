@@ -21,9 +21,11 @@
         <tr>
             <th>CGAffineTransform Animation</th>
             <th>Core Basic Animation</th>
+            <th>Core Spring Animation</th>
         </tr>
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CGAffineAnimation.gif" width="300"></td>
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CABasicAnimation.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CASpringAnimation.gif" width="300"></td>
     </tr>
 </table>
 
@@ -249,6 +251,25 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
         imageView.layer.add(basic0, forKey: "test.io")
         
 ```
+
+## Core Basic Animation
+<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CASpringAnimation.gif" height="400" width="200">
+https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/CASpringController.swift
+
+```swift
+
+        let springAnimation = CASpringAnimation(keyPath: "transform.scale")
+        springAnimation.fromValue = 0
+        springAnimation.toValue = 1
+        springAnimation.damping = 5
+        springAnimation.mass = 0
+        springAnimation.duration = 10
+        
+        imageView.layer.add(springAnimation, forKey: "test.iosa")
+        blurView.layer.add(springAnimation, forKey: "test.iosa")
+        
+```
+
 
 
 
