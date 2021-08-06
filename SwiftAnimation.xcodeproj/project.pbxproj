@@ -24,7 +24,8 @@
 		7B6F4CC426BC9EDE00A78B10 /* CoreAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CC326BC9EDE00A78B10 /* CoreAnimation.storyboard */; };
 		7B6F4CC826BCA2AD00A78B10 /* CGAffineTransformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CC726BCA2AD00A78B10 /* CGAffineTransformController.swift */; };
 		7B6F4CCB26BCAF5800A78B10 /* CABasicAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */; };
-		7B6F4CCE26BCB68E00A78B10 /* CGAffine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CCD26BCB68E00A78B10 /* CGAffine.gif */; };
+		7B6F4CCE26BCB68E00A78B10 /* CGAffineAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CCD26BCB68E00A78B10 /* CGAffineAnimation.gif */; };
+		7B6F4CD326BD5FB300A78B10 /* CAStandardAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CD226BD5FB300A78B10 /* CAStandardAnimation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +48,8 @@
 		7B6F4CC326BC9EDE00A78B10 /* CoreAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreAnimation.storyboard; sourceTree = "<group>"; };
 		7B6F4CC726BCA2AD00A78B10 /* CGAffineTransformController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformController.swift; sourceTree = "<group>"; };
 		7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABasicAnimationController.swift; sourceTree = "<group>"; };
-		7B6F4CCD26BCB68E00A78B10 /* CGAffine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CGAffine.gif; sourceTree = "<group>"; };
+		7B6F4CCD26BCB68E00A78B10 /* CGAffineAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CGAffineAnimation.gif; sourceTree = "<group>"; };
+		7B6F4CD226BD5FB300A78B10 /* CAStandardAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CAStandardAnimation.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +128,8 @@
 		7B6F4CB426BBF8B700A78B10 /* Git */ = {
 			isa = PBXGroup;
 			children = (
-				7B6F4CCD26BCB68E00A78B10 /* CGAffine.gif */,
+				7B6F4CD226BD5FB300A78B10 /* CAStandardAnimation.gif */,
+				7B6F4CCD26BCB68E00A78B10 /* CGAffineAnimation.gif */,
 				7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */,
 				7B6F4CBB26BBF96D00A78B10 /* ButtonAnimation.gif */,
 				7B6F4CB826BBF90400A78B10 /* SpringAnimation.gif */,
@@ -195,7 +198,8 @@
 				7B6F4CC426BC9EDE00A78B10 /* CoreAnimation.storyboard in Resources */,
 				7B6F4C4826B9751E00A78B10 /* LaunchScreen.storyboard in Resources */,
 				7B6F4CBF26BBF9B600A78B10 /* PropertyAnimation.gif in Resources */,
-				7B6F4CCE26BCB68E00A78B10 /* CGAffine.gif in Resources */,
+				7B6F4CCE26BCB68E00A78B10 /* CGAffineAnimation.gif in Resources */,
+				7B6F4CD326BD5FB300A78B10 /* CAStandardAnimation.gif in Resources */,
 				7B6F4C4526B9751E00A78B10 /* Assets.xcassets in Resources */,
 				7B6F4C4326B9751B00A78B10 /* SimpleAnimation.storyboard in Resources */,
 				7B6F4CB626BBF8C700A78B10 /* SimpleAnimation.gif in Resources */,

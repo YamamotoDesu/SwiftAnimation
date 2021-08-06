@@ -13,8 +13,6 @@ class CABasicAnimationController: UIViewController {
     fileprivate var imageView: UIImageView = UIImageView(image: #imageLiteral(resourceName: "dog"))
     fileprivate var blurView: UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .prominent))
     
-    fileprivate let box = UIView()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,21 +26,58 @@ class CABasicAnimationController: UIViewController {
         
         self.blurView.alpha = 0
         
+        //A Boolean indicating whether sublayers are clipped to the layer’s bounds. Animatable.
+        imageView.layer.masksToBounds = true
+        blurView.layer.masksToBounds = true
+        
         animator.addAnimations {
             self.blurView.alpha = 1
             self.imageView.transform = CGAffineTransform(scaleX: 2, y: 2)
         }
 
+        setupCABasic()
         setupSlider()
-        view.addSubview(box)
-        box.backgroundColor = .red
-        box.translatesAutoresizingMaskIntoConstraints = false
-        box.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        box.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        box.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        box.heightAnchor.constraint(equalToConstant: 150).isActive = true
         
         perform(#selector(self.animateBox), with: nil, afterDelay: 1)
+    }
+    
+    fileprivate func setupCABasic() {
+        let basic0 = CABasicAnimation(keyPath: "transform.scale")
+        // Defines the value the receiver uses to end interpolation.
+        basic0.toValue = 0.5
+        basic0.duration = 2
+        
+        // The receiver remains visible in its final state when the animation is completed.
+        basic0.fillMode = CAMediaTimingFillMode.forwards
+        // Determines if the animation is removed from the target layer’s animations upon completion.
+        basic0.isRemovedOnCompletion = false
+        
+        imageView.layer.add(basic0, forKey: "test.io")
+        blurView.layer.add(basic0, forKey: "test.io")
+        
+        let basic1 = CABasicAnimation(keyPath: "conrerRadius")
+        // Defines the value the receiver uses to end interpolation.
+        basic1.toValue = 50
+        basic1.duration = 2
+        
+        // The receiver remains visible in its final state when the animation is completed.
+        basic1.fillMode = CAMediaTimingFillMode.forwards
+        // Determines if the animation is removed from the target layer’s animations upon completion.
+        basic1.isRemovedOnCompletion = false
+        
+        imageView.layer.add(basic1, forKey: "test.io/1")
+        blurView.layer.add(basic1, forKey: "test.io/1")
+        
+        let basic2 = CABasicAnimation(keyPath: "opacity")
+        // Defines the value the receiver uses to end interpolation.
+        basic2.toValue = 0
+        basic2.duration = 2
+        
+        // The receiver remains visible in its final state when the animation is completed.
+        basic2.fillMode = CAMediaTimingFillMode.forwards
+        // Determines if the animation is removed from the target layer’s animations upon completion.
+        basic2.isRemovedOnCompletion = false
+        blurView.layer.add(basic2, forKey: "test.io/2")
     }
     
     @objc fileprivate func animateBox() {
@@ -51,8 +86,6 @@ class CABasicAnimationController: UIViewController {
             transform = transform.scaledBy(x: 1.1, y: 1.6)
             transform = transform.translatedBy(x: 30, y: 50)
             transform = transform.rotated(by: 45)
-            
-            self.box.transform = transform
         }
 
     }
