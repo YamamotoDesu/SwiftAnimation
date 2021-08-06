@@ -22,7 +22,7 @@
             <th>CGAffineTransform Animation</th>
             <th>Core Basic Animation</th>
         </tr>
-        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CGAffine.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CGAffineAnimation.gif.gif" width="300"></td>
         <td><img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/CABasicAnimation.gif" width="300"></td>
     </tr>
 </table>
