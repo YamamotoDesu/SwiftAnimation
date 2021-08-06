@@ -31,7 +31,7 @@
 # Usage
 
 ## Simple Animation
-<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SimpleAnimation.gif" width="300">  
+<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SimpleAnimation.gif" height="400" width="200">
 https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SimpleController.swift  
 
 ```swift
@@ -52,7 +52,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
 ```
 
 ## Spring Animation
-<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SpringAnimation.gif" width="300">  
+<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/SpringAnimation.gif" height="400" width="200">
 https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/SpringController.swift  
 
 ```swift
@@ -116,7 +116,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controll
 ```
 
 ## Button Animation
-<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/ButtonAnimation.gif" width="300">  
+<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/ButtonAnimation.gif" height="400" width="200">
 https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/ButtonController.swift
 
 ```swift
@@ -175,7 +175,7 @@ https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/View/Ani
 
 
 ## Property Animation
-<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/PropertyAnimation.gif" width="300">  
+<img src="https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Git/PropertyAnimation.gif" height="400" width="200">
 https://github.com/YamamotoDesu/SwiftAnimation/blob/main/SwiftAnimation/Controller/PropertyController.swift 
 
 ```swift
