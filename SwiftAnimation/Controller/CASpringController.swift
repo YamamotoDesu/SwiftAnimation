@@ -1,5 +1,5 @@
 //
-//  CABasicAnimationController.swift
+//  CASpringController.swift
 //  SwiftAnimation
 //
 //  Created by 山本響 on 2021/08/06.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CABasicAnimationController: UIViewController {
+class CASpringController: UIViewController {
     
     fileprivate let animator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: nil)
     fileprivate var imageView: UIImageView = UIImageView(image: #imageLiteral(resourceName: "dog"))
@@ -42,42 +42,16 @@ class CABasicAnimationController: UIViewController {
     }
     
     fileprivate func setupCABasic() {
-        let basic0 = CABasicAnimation(keyPath: "transform.scale")
-        // Defines the value the receiver uses to end interpolation.
-        basic0.toValue = 0.5
-        basic0.duration = 2
         
-        // The receiver remains visible in its final state when the animation is completed.
-        basic0.fillMode = CAMediaTimingFillMode.forwards
-        // Determines if the animation is removed from the target layer’s animations upon completion.
-        basic0.isRemovedOnCompletion = false
+        let springAnimation = CASpringAnimation(keyPath: "transform.scale")
+        springAnimation.fromValue = 0
+        springAnimation.toValue = 1
+        springAnimation.damping = 5
+        springAnimation.mass = 0
+        springAnimation.duration = 10
         
-        imageView.layer.add(basic0, forKey: "test.io")
-        blurView.layer.add(basic0, forKey: "test.io")
-        
-        let basic1 = CABasicAnimation(keyPath: "conrerRadius")
-        // Defines the value the receiver uses to end interpolation.
-        basic1.toValue = 50
-        basic1.duration = 2
-
-        // The receiver remains visible in its final state when the animation is completed.
-        basic1.fillMode = CAMediaTimingFillMode.forwards
-        // Determines if the animation is removed from the target layer’s animations upon completion.
-        basic1.isRemovedOnCompletion = false
-
-        imageView.layer.add(basic1, forKey: "test.io/1")
-        blurView.layer.add(basic1, forKey: "test.io/1")
-
-        let basic2 = CABasicAnimation(keyPath: "opacity")
-        // Defines the value the receiver uses to end interpolation.
-        basic2.toValue = 0
-        basic2.duration = 2
-
-        // The receiver remains visible in its final state when the animation is completed.
-        basic2.fillMode = CAMediaTimingFillMode.forwards
-        // Determines if the animation is removed from the target layer’s animations upon completion.
-        basic2.isRemovedOnCompletion = false
-        blurView.layer.add(basic2, forKey: "test.io/2")
+        imageView.layer.add(springAnimation, forKey: "test.iosa")
+        blurView.layer.add(springAnimation, forKey: "test.iosa")
     }
     
     @objc fileprivate func animateBox() {
@@ -106,5 +80,6 @@ class CABasicAnimationController: UIViewController {
         print(slider.value)
         animator.fractionComplete = CGFloat(slider.value)
     }
+
 
 }

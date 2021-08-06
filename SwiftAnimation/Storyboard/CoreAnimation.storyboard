@@ -48,11 +48,32 @@
                     </view>
                     <navigationItem key="navigationItem" title="CABasic" id="eDY-99-yYd">
                         <barButtonItem key="backBarButtonItem" id="8xj-IA-wFh"/>
+                        <barButtonItem key="rightBarButtonItem" title="CASpring" id="PGQ-1T-fYv">
+                            <connections>
+                                <segue destination="fGM-IO-Vxh" kind="show" id="YwR-8Q-wWT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="em5-7r-zuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1780" y="62"/>
+        </scene>
+        <!--CASpring-->
+        <scene sceneID="CEg-Oc-ZfZ">
+            <objects>
+                <viewController id="fGM-IO-Vxh" customClass="CASpringController" customModule="SwiftAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DJv-Im-DHc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="n9C-eh-B28"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CASpring" id="384-uE-ZEn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKV-H1-Xbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2659" y="62"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cqe-Q7-Vw0">

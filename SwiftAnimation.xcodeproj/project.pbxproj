@@ -26,6 +26,8 @@
 		7B6F4CCB26BCAF5800A78B10 /* CABasicAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */; };
 		7B6F4CCE26BCB68E00A78B10 /* CGAffineAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CCD26BCB68E00A78B10 /* CGAffineAnimation.gif */; };
 		7B6F4CD326BD5FB300A78B10 /* CABasicAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CD226BD5FB300A78B10 /* CABasicAnimation.gif */; };
+		7B6F4CD926BD686C00A78B10 /* CASpringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CD826BD686B00A78B10 /* CASpringController.swift */; };
+		7B6F4CDC26BD6BE000A78B10 /* CASpringAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CDB26BD6BE000A78B10 /* CASpringAnimation.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABasicAnimationController.swift; sourceTree = "<group>"; };
 		7B6F4CCD26BCB68E00A78B10 /* CGAffineAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CGAffineAnimation.gif; sourceTree = "<group>"; };
 		7B6F4CD226BD5FB300A78B10 /* CABasicAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CABasicAnimation.gif; sourceTree = "<group>"; };
+		7B6F4CD826BD686B00A78B10 /* CASpringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CASpringController.swift; sourceTree = "<group>"; };
+		7B6F4CDB26BD6BE000A78B10 /* CASpringAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CASpringAnimation.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				7B6F4CA726BB57D200A78B10 /* PropertyController.swift */,
 				7B6F4CC726BCA2AD00A78B10 /* CGAffineTransformController.swift */,
 				7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */,
+				7B6F4CD826BD686B00A78B10 /* CASpringController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		7B6F4CB426BBF8B700A78B10 /* Git */ = {
 			isa = PBXGroup;
 			children = (
+				7B6F4CDB26BD6BE000A78B10 /* CASpringAnimation.gif */,
 				7B6F4CD226BD5FB300A78B10 /* CABasicAnimation.gif */,
 				7B6F4CCD26BCB68E00A78B10 /* CGAffineAnimation.gif */,
 				7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */,
@@ -200,6 +206,7 @@
 				7B6F4CBF26BBF9B600A78B10 /* PropertyAnimation.gif in Resources */,
 				7B6F4CCE26BCB68E00A78B10 /* CGAffineAnimation.gif in Resources */,
 				7B6F4CD326BD5FB300A78B10 /* CABasicAnimation.gif in Resources */,
+				7B6F4CDC26BD6BE000A78B10 /* CASpringAnimation.gif in Resources */,
 				7B6F4C4526B9751E00A78B10 /* Assets.xcassets in Resources */,
 				7B6F4C4326B9751B00A78B10 /* SimpleAnimation.storyboard in Resources */,
 				7B6F4CB626BBF8C700A78B10 /* SimpleAnimation.gif in Resources */,
@@ -217,6 +224,7 @@
 			files = (
 				7B6F4C4026B9751B00A78B10 /* SimpleController.swift in Sources */,
 				7B6F4C3C26B9751B00A78B10 /* AppDelegate.swift in Sources */,
+				7B6F4CD926BD686C00A78B10 /* CASpringController.swift in Sources */,
 				7B6F4CA326BA1B8E00A78B10 /* ButtonController.swift in Sources */,
 				7B6F4CA826BB57D200A78B10 /* PropertyController.swift in Sources */,
 				7B6F4C3E26B9751B00A78B10 /* SceneDelegate.swift in Sources */,
