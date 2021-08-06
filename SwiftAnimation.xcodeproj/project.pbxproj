@@ -10,7 +10,7 @@
 		7B6F4C3C26B9751B00A78B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4C3B26B9751B00A78B10 /* AppDelegate.swift */; };
 		7B6F4C3E26B9751B00A78B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4C3D26B9751B00A78B10 /* SceneDelegate.swift */; };
 		7B6F4C4026B9751B00A78B10 /* SimpleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4C3F26B9751B00A78B10 /* SimpleController.swift */; };
-		7B6F4C4326B9751B00A78B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4C4126B9751B00A78B10 /* Main.storyboard */; };
+		7B6F4C4326B9751B00A78B10 /* SimpleAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4C4126B9751B00A78B10 /* SimpleAnimation.storyboard */; };
 		7B6F4C4526B9751E00A78B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4C4426B9751E00A78B10 /* Assets.xcassets */; };
 		7B6F4C4826B9751E00A78B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4C4626B9751E00A78B10 /* LaunchScreen.storyboard */; };
 		7B6F4C9526B9812A00A78B10 /* SpringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4C9426B9812A00A78B10 /* SpringController.swift */; };
@@ -21,6 +21,10 @@
 		7B6F4CB926BBF90400A78B10 /* SpringAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CB826BBF90400A78B10 /* SpringAnimation.gif */; };
 		7B6F4CBC26BBF96D00A78B10 /* ButtonAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CBB26BBF96D00A78B10 /* ButtonAnimation.gif */; };
 		7B6F4CBF26BBF9B600A78B10 /* PropertyAnimation.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */; };
+		7B6F4CC426BC9EDE00A78B10 /* CoreAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CC326BC9EDE00A78B10 /* CoreAnimation.storyboard */; };
+		7B6F4CC826BCA2AD00A78B10 /* CGAffineTransformController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CC726BCA2AD00A78B10 /* CGAffineTransformController.swift */; };
+		7B6F4CCB26BCAF5800A78B10 /* CABasicAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */; };
+		7B6F4CCE26BCB68E00A78B10 /* CGAffine.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6F4CCD26BCB68E00A78B10 /* CGAffine.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +32,7 @@
 		7B6F4C3B26B9751B00A78B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B6F4C3D26B9751B00A78B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B6F4C3F26B9751B00A78B10 /* SimpleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleController.swift; sourceTree = "<group>"; };
-		7B6F4C4226B9751B00A78B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B6F4C4226B9751B00A78B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SimpleAnimation.storyboard; sourceTree = "<group>"; };
 		7B6F4C4426B9751E00A78B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B6F4C4726B9751E00A78B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B6F4C4926B9751E00A78B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +44,10 @@
 		7B6F4CB826BBF90400A78B10 /* SpringAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = SpringAnimation.gif; sourceTree = "<group>"; };
 		7B6F4CBB26BBF96D00A78B10 /* ButtonAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ButtonAnimation.gif; sourceTree = "<group>"; };
 		7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = PropertyAnimation.gif; sourceTree = "<group>"; };
+		7B6F4CC326BC9EDE00A78B10 /* CoreAnimation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreAnimation.storyboard; sourceTree = "<group>"; };
+		7B6F4CC726BCA2AD00A78B10 /* CGAffineTransformController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformController.swift; sourceTree = "<group>"; };
+		7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CABasicAnimationController.swift; sourceTree = "<group>"; };
+		7B6F4CCD26BCB68E00A78B10 /* CGAffine.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CGAffine.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,8 @@
 				7B6F4C9426B9812A00A78B10 /* SpringController.swift */,
 				7B6F4CA226BA1B8E00A78B10 /* ButtonController.swift */,
 				7B6F4CA726BB57D200A78B10 /* PropertyController.swift */,
+				7B6F4CC726BCA2AD00A78B10 /* CGAffineTransformController.swift */,
+				7B6F4CCA26BCAF5800A78B10 /* CABasicAnimationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,8 +108,9 @@
 		7B6F4C9326B980CE00A78B10 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				7B6F4C4126B9751B00A78B10 /* Main.storyboard */,
 				7B6F4C4626B9751E00A78B10 /* LaunchScreen.storyboard */,
+				7B6F4C4126B9751B00A78B10 /* SimpleAnimation.storyboard */,
+				7B6F4CC326BC9EDE00A78B10 /* CoreAnimation.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -115,6 +126,7 @@
 		7B6F4CB426BBF8B700A78B10 /* Git */ = {
 			isa = PBXGroup;
 			children = (
+				7B6F4CCD26BCB68E00A78B10 /* CGAffine.gif */,
 				7B6F4CBE26BBF9B600A78B10 /* PropertyAnimation.gif */,
 				7B6F4CBB26BBF96D00A78B10 /* ButtonAnimation.gif */,
 				7B6F4CB826BBF90400A78B10 /* SpringAnimation.gif */,
@@ -180,10 +192,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6F4CC426BC9EDE00A78B10 /* CoreAnimation.storyboard in Resources */,
 				7B6F4C4826B9751E00A78B10 /* LaunchScreen.storyboard in Resources */,
 				7B6F4CBF26BBF9B600A78B10 /* PropertyAnimation.gif in Resources */,
+				7B6F4CCE26BCB68E00A78B10 /* CGAffine.gif in Resources */,
 				7B6F4C4526B9751E00A78B10 /* Assets.xcassets in Resources */,
-				7B6F4C4326B9751B00A78B10 /* Main.storyboard in Resources */,
+				7B6F4C4326B9751B00A78B10 /* SimpleAnimation.storyboard in Resources */,
 				7B6F4CB626BBF8C700A78B10 /* SimpleAnimation.gif in Resources */,
 				7B6F4CB926BBF90400A78B10 /* SpringAnimation.gif in Resources */,
 				7B6F4CBC26BBF96D00A78B10 /* ButtonAnimation.gif in Resources */,
@@ -202,6 +216,8 @@
 				7B6F4CA326BA1B8E00A78B10 /* ButtonController.swift in Sources */,
 				7B6F4CA826BB57D200A78B10 /* PropertyController.swift in Sources */,
 				7B6F4C3E26B9751B00A78B10 /* SceneDelegate.swift in Sources */,
+				7B6F4CCB26BCAF5800A78B10 /* CABasicAnimationController.swift in Sources */,
+				7B6F4CC826BCA2AD00A78B10 /* CGAffineTransformController.swift in Sources */,
 				7B6F4C9526B9812A00A78B10 /* SpringController.swift in Sources */,
 				7B6F4C9C26BA15E200A78B10 /* AnimationButton.swift in Sources */,
 			);
@@ -210,12 +226,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7B6F4C4126B9751B00A78B10 /* Main.storyboard */ = {
+		7B6F4C4126B9751B00A78B10 /* SimpleAnimation.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7B6F4C4226B9751B00A78B10 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SimpleAnimation.storyboard;
 			sourceTree = "<group>";
 		};
 		7B6F4C4626B9751E00A78B10 /* LaunchScreen.storyboard */ = {

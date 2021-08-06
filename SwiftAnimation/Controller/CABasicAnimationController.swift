@@ -1,17 +1,19 @@
 //
-//  PropertyController.swift
+//  CABasicAnimationController.swift
 //  SwiftAnimation
 //
-//  Created by 山本響 on 2021/08/05.
+//  Created by 山本響 on 2021/08/06.
 //
 
 import UIKit
 
-class PropertyController: UIViewController {
+class CABasicAnimationController: UIViewController {
     
     fileprivate let animator = UIViewPropertyAnimator(duration: 1, curve: .linear, animations: nil)
     fileprivate var imageView: UIImageView = UIImageView(image: #imageLiteral(resourceName: "dog"))
     fileprivate var blurView: UIVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .prominent))
+    
+    fileprivate let box = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,27 @@ class PropertyController: UIViewController {
         }
 
         setupSlider()
+        view.addSubview(box)
+        box.backgroundColor = .red
+        box.translatesAutoresizingMaskIntoConstraints = false
+        box.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        box.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        box.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        box.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        
+        perform(#selector(self.animateBox), with: nil, afterDelay: 1)
+    }
+    
+    @objc fileprivate func animateBox() {
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn) {
+            var transform = CGAffineTransform.identity
+            transform = transform.scaledBy(x: 1.1, y: 1.6)
+            transform = transform.translatedBy(x: 30, y: 50)
+            transform = transform.rotated(by: 45)
+            
+            self.box.transform = transform
+        }
+
     }
     
     fileprivate func setupSlider() {
@@ -49,10 +72,6 @@ class PropertyController: UIViewController {
     @objc fileprivate func handleSliderChanged(slider: UISlider) {
         print(slider.value)
         animator.fractionComplete = CGFloat(slider.value)
-    }
-    
-    @IBAction func unwindToProperty(_ unwindSegue: UIStoryboardSegue) {
-
     }
 
 }

@@ -70,7 +70,7 @@ class AnimationButton: UIButton {
         
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 1, options: .curveEaseIn) {
             self.superview?.layoutIfNeeded()
-            //self.transform = .identity
+            self.transform = .identity
         }
     }
     
