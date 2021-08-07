@@ -1,4 +1,4 @@
-# SwiftAnimation(WIP)
+# SwiftAnimation
 ### UIKit Animation
 <table border="0">
     <tr>
